@@ -1,5 +1,5 @@
 -- 03_cohort_retention.sql
--- Monthly cohort retention analysis.
+-- Monthly cohort retention (unchanged logic, updated for new dates).
 
 DROP VIEW IF EXISTS cohort_retention_matrix;
 
@@ -42,12 +42,12 @@ SELECT
     r.month_index,
     r.customers_ordered,
     c.total_customers,
-    ROUND(100.0 * r.customers_ordered::NUMERIC / c.total_customers, 2) AS retention_percentage
+    ROUND(100.0 * r.customers_ordered::NUMERIC / NULLIF(c.total_customers, 0), 2) AS retention_percentage
 FROM retention_raw r
 JOIN cohort_size c ON r.cohort_month = c.cohort_month
 ORDER BY r.cohort_month, r.month_index;
 
--- Pivot view for easy reading
+-- Pivot for readability
 SELECT
     cohort_month,
     MAX(CASE WHEN month_index = 0 THEN retention_percentage END) AS "Month 0",
