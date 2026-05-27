@@ -1,0 +1,37 @@
+# Database & Output
+*.sql.backup
+*.bak
+output/*.csv
+output/*.xlsx
+
+# PostgreSQL
+*.log
+pg_dump.sql
+*.dump
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor & IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment
+.env
+.env.local
+
+# Temporary files
+*.tmp
+*.temp
+
+# Makefile artifacts (if any)
+*.make
+
+# Large data files
+*.csv
+*.tsv
+*.json
+*.parquet
