@@ -18,7 +18,7 @@ This project helps businesses understand:
 
 ## Features
 
-- **RFM Analysis** with corrected scoring (Recency, Frequency, Monetary)
+- **RFM Analysis** with scoring (Recency, Frequency, Monetary)
 - Added business metrics: Average Order Value (AOV), Lifetime Days, Churn Flag
 - **Monthly Cohort Retention** matrix with pivot view
 - Rich sample data (2024–2026)
