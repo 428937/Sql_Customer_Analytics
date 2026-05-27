@@ -1,5 +1,5 @@
 -- 00_schema.sql
--- Creates tables for orders and customers.
+-- Creates core tables with proper constraints and indexing.
 
 DROP TABLE IF EXISTS orders CASCADE;
 DROP TABLE IF EXISTS customers CASCADE;
@@ -18,4 +18,6 @@ CREATE TABLE orders (
     amount        DECIMAL(10,2) NOT NULL CHECK (amount >= 0)
 );
 
+-- Performance indexes
 CREATE INDEX idx_orders_customer_date ON orders(customer_id, order_date);
+CREATE INDEX idx_orders_order_date ON orders(order_date);
