@@ -6,9 +6,7 @@
 --   pgAdmin, TablePlus, and most other GUI tools. RAISE NOTICE works
 --   everywhere (psql, pgAdmin, DBeaver, etc.).
 
--- ============================================================
 -- 1. TOP 5 CHAMPIONS
--- ============================================================
 DO $$ BEGIN RAISE NOTICE '===== TOP 5 CHAMPIONS ====='; END $$;
 
 SELECT
@@ -26,9 +24,7 @@ ORDER BY monetary DESC
 LIMIT 5;
 
 
--- ============================================================
 -- 2. HIGH-RISK CUSTOMERS (At Risk + Lost + churn_flag)
--- ============================================================
 DO $$ BEGIN RAISE NOTICE '===== HIGH-RISK CUSTOMERS (At Risk + Lost) ====='; END $$;
 
 SELECT
@@ -47,9 +43,7 @@ ORDER BY recency_days DESC
 LIMIT 8;
 
 
--- ============================================================
 -- 3. RFM SEGMENT DISTRIBUTION & REVENUE CONTRIBUTION
--- ============================================================
 DO $$ BEGIN RAISE NOTICE '===== RFM SEGMENT DISTRIBUTION & REVENUE CONTRIBUTION ====='; END $$;
 
 SELECT
@@ -64,9 +58,7 @@ GROUP BY segment_label
 ORDER BY total_revenue DESC;
 
 
--- ============================================================
 -- 4. COHORT RETENTION SUMMARY (First 6 Months)
--- ============================================================
 DO $$ BEGIN RAISE NOTICE '===== COHORT RETENTION SUMMARY (First 6 Months) ====='; END $$;
 
 SELECT *
@@ -75,9 +67,7 @@ WHERE month_index <= 5
 ORDER BY cohort_month DESC, month_index;
 
 
--- ============================================================
 -- 5. CUSTOMER LIFETIME METRICS (top 10 by revenue)
--- ============================================================
 DO $$ BEGIN RAISE NOTICE '===== CUSTOMER LIFETIME METRICS ====='; END $$;
 
 SELECT *
