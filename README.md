@@ -1,6 +1,6 @@
 # Sql_Customer_Analytics
 
-## Customer Cohort Retention & RFM Analysis (PostgreSQL)
+### Customer Cohort Retention & RFM Analysis (PostgreSQL)
 
 A clean, modular, and production-ready SQL project for analyzing e-commerce customer behavior using **RFM Segmentation** and **Cohort Retention Analysis**.
 
