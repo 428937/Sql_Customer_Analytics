@@ -6,7 +6,7 @@ A clean, modular, and production-ready SQL project for analyzing e-commerce cust
 
 ---
 
-## Project Objective
+### Project Objective
 
 This project helps businesses understand:
 - Who are the most valuable customers (Champions, Loyal)
