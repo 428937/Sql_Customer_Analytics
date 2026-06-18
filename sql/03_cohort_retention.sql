@@ -1,5 +1,5 @@
 -- 03_cohort_retention.sql
--- Monthly cohort retention matrix.
+-- Monthly cohort retention matrix...
 
 DROP VIEW IF EXISTS cohort_retention_matrix;
 
