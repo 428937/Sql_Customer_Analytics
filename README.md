@@ -1,4 +1,4 @@
-## Sql_Customer_Analytics
+# Sql_Customer_Analytics
 
 ### Customer Cohort Retention & RFM Analysis (PostgreSQL)
 
