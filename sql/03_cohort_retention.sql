@@ -56,6 +56,7 @@ JOIN cohort_size c ON r.cohort_month = c.cohort_month
 ORDER BY r.cohort_month, r.month_index;
 
 
+-- New commit changes: 
 -- Pivot for readability.
 -- FIXED: expanded from 6 to 13 columns (Month 0–12).
 -- Your earliest cohort is Jan 2024 and analysis_date is May 2026 (~28 months),
